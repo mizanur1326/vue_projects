@@ -44,23 +44,23 @@ import { Link } from '@inertiajs/vue3';
         <div class="container-fluid bg-dark">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
-                    <a href="index.html" class="navbar-brand">
+                    <Link href="/" class="navbar-brand">
                         <h1 class="text-primary mb-0 display-5">Pest<span class="text-white">Kit</span><i
                                 class="fa fa-spider text-primary ms-2"></i></h1>
-                    </a>
+                    </Link>
                     <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-dark"></span>
                     </button>
                     <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <Link href="/" class="nav-item nav-link active">Home</Link>
-                            <Link :href="route('about')" class="nav-item nav-link">About</Link>
-                            <Link :href="route('services')" class="nav-item nav-link">Services</Link>
-                            <Link :href="route('projects')" class="nav-item nav-link">Projects</Link>
-                            <Link :href="route('packeges')" class="nav-item nav-link">Packeges</Link>
-                            <Link :href="route('contact')" class="nav-item nav-link">Contact</Link>
-                            <Link :href="route('blogs')" class="nav-item nav-link">Blogs</Link>
+                            <Link href="/" class="nav-item nav-link" :class="{'active' : $page.url === '/' }">Home</Link>
+                            <Link :href="route('about')" class="nav-item nav-link" :class="{'active' : $page.url === '/about' }">About</Link>
+                            <Link :href="route('services')" class="nav-item nav-link" :class="{'active' : $page.url === '/services' }">Services</Link>
+                            <Link :href="route('projects')" class="nav-item nav-link" :class="{'active' : $page.url === '/projects' }">Projects</Link>
+                            <Link :href="route('packeges')" class="nav-item nav-link" :class="{'active' : $page.url === '/packeges' }">Packeges</Link>
+                            <Link :href="route('contact')" class="nav-item nav-link" :class="{'active' : $page.url === '/contact' }">Contact</Link>
+                            <Link :href="route('blogs')" class="nav-item nav-link" :class="{'active' : $page.url === '/blogs' }">Blogs</Link>
                         </div>
                     </div>
                 </nav>

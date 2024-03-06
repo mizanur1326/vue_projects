@@ -17,6 +17,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 </script>
 
 <template>
+
     <div>
         <!-- Topbar Start -->
         <!-- <TopBar /> -->
