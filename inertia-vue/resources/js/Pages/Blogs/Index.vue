@@ -2,6 +2,8 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import { Head, Link, useForm } from "@inertiajs/vue3";
+import FrontendLayout from "@/Layouts/FrontendLayout.vue";
+
 
 const props = defineProps({
     blogs: {
@@ -19,9 +21,10 @@ function destroy(id) {
 </script>
 
 <template>
+
     <Head title="Blogs" />
 
-    <AuthenticatedLayout>
+    <FrontendLayout>
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">
                 Blogs Index
@@ -68,7 +71,7 @@ function destroy(id) {
 
                                         <td class="px-6 py-4">
                                             <Link :href="route('blogs.edit', blog.id)
-                                                " class="px-4 py-2 text-white bg-blue-600 rounded-lg">Edit</Link>
+                                " class="px-4 py-2 text-white bg-blue-600 rounded-lg">Edit</Link>
                                         </td>
                                         <td class="px-6 py-4">
                                             <PrimaryButton class="bg-red-700" @click="destroy(blog.id)">
@@ -83,5 +86,5 @@ function destroy(id) {
                 </div>
             </div>
         </div>
-    </AuthenticatedLayout>
+    </FrontendLayout>
 </template>
