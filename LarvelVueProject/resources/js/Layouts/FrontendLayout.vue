@@ -60,6 +60,7 @@ import { Link } from '@inertiajs/vue3';
                             <Link :href="route('projects')" class="nav-item nav-link">Projects</Link>
                             <Link :href="route('packeges')" class="nav-item nav-link">Packeges</Link>
                             <Link :href="route('contact')" class="nav-item nav-link">Contact</Link>
+                            <Link :href="route('blogs')" class="nav-item nav-link">Blogs</Link>
                         </div>
                     </div>
                 </nav>
