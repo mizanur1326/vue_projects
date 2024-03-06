@@ -54,6 +54,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
         <!-- Project End -->
 
 
+
         <!-- Blog Start -->
         <Blog />
         <!-- Blog End -->
@@ -86,7 +87,7 @@ import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 
 
     </FrontendLayout>
-    
+
     <!-- Copyright Start -->
     <!-- <Copyright /> -->
     <!-- Copyright End -->

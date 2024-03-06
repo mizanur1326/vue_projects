@@ -1,8 +1,10 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
+
 </script>
 <template>
     <div>
+        <!-- Top Banner -->
         <div class="container-fluid topbar-top bg-primary">
             <div class="container">
                 <div class="d-flex justify-content-between topbar py-2">
@@ -38,6 +40,7 @@ import { Link } from '@inertiajs/vue3';
             </div>
         </div>
 
+        
         <div class="container-fluid bg-dark">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
@@ -51,21 +54,12 @@ import { Link } from '@inertiajs/vue3';
                     </button>
                     <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="project.html" class="nav-item nav-link">Projects</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0 bg-primary">
-                                    <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                                    <a href="blog.html" class="dropdown-item">Blog Post</a>
-                                    <a href="team.html" class="dropdown-item">Team Members</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <Link href="/" class="nav-item nav-link active">Home</Link>
+                            <Link :href="route('about')" class="nav-item nav-link">About</Link>
+                            <Link :href="route('services')" class="nav-item nav-link">Services</Link>
+                            <Link :href="route('projects')" class="nav-item nav-link">Projects</Link>
+                            <Link :href="route('packeges')" class="nav-item nav-link">Packeges</Link>
+                            <Link :href="route('contact')" class="nav-item nav-link">Contact</Link>
                         </div>
                     </div>
                 </nav>
