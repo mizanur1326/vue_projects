@@ -107,7 +107,7 @@
 </template>
 
 <script>
-import carousel from "vue-owl-carousel";
+// import carousel from "vue-owl-carousel";
 export default {
     // components: { carousel },
 };
