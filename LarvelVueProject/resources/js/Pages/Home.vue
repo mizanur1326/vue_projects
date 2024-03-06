@@ -13,16 +13,19 @@ import Team from '@/Components/Team.vue';
 import Testimonial from '@/Components/Testimonial.vue';
 import Footer from '@/Components/Footer.vue';
 import Copyright from '@/Components/Copyright.vue';
+import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 </script>
 
 <template>
     <div>
         <!-- Topbar Start -->
-            <TopBar />
-        <!-- Topbar End -->
+        <!-- <TopBar /> -->
+    <!-- Topbar End -->
+    
+        <FrontendLayout>
 
         <!-- Navbar Start -->
-            <NavBar />
+            <!-- <NavBar /> -->
         <!-- Navbar End -->
 
 
@@ -77,14 +80,16 @@ import Copyright from '@/Components/Copyright.vue';
 
 
         <!-- Footer Start -->
-        <Footer />
+        <!-- <Footer /> -->
         <!-- Footer End -->
 
 
 
-        <!-- Copyright Start -->
-        <Copyright />
-        <!-- Copyright End -->        
+    </FrontendLayout>
+    
+    <!-- Copyright Start -->
+    <!-- <Copyright /> -->
+    <!-- Copyright End -->
     </div>
 </template>
 

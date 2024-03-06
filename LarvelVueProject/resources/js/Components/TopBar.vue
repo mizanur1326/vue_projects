@@ -1,21 +1,26 @@
 <template>
     <div>
-                
-                <div class="container-fluid topbar-top bg-primary">
+
+        <div class="container-fluid topbar-top bg-primary">
             <div class="container">
                 <div class="d-flex justify-content-between topbar py-2">
                     <div class="d-flex align-items-center flex-shrink-0 topbar-info">
-                        <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>123 Street, CA, USA</a>
-                        <a href="#" class="me-4 text-secondary"><i class="fas fa-phone-alt me-2 text-dark"></i>+01234567890</a>
-                        <a href="#" class="text-secondary"><i class="fas fa-envelope me-2 text-dark"></i>Example@gmail.com</a>
+                        <a href="#" class="me-4 text-secondary"><i class="fas fa-map-marker-alt me-2 text-dark"></i>123
+                            Street, CA, USA</a>
+                        <a href="#" class="me-4 text-secondary"><i
+                                class="fas fa-phone-alt me-2 text-dark"></i>+01234567890</a>
+                        <a href="#" class="text-secondary"><i
+                                class="fas fa-envelope me-2 text-dark"></i>Example@gmail.com</a>
                     </div>
                     <div class="text-end pe-4 me-4 border-end border-dark search-btn">
                         <div class="search-form">
                             <form method="post" action="index.html">
                                 <div class="form-group">
                                     <div class="d-flex">
-                                        <input type="search" class="form-control border-0 rounded-pill" name="search-input" value="" placeholder="Search Here" required=""/>
-                                        <button type="submit" value="Search Now!" class="btn"><i class="fa fa-search text-dark"></i></button>
+                                        <input type="search" class="form-control border-0 rounded-pill"
+                                            name="search-input" value="" placeholder="Search Here" required="" />
+                                        <button type="submit" value="Search Now!" class="btn"><i
+                                                class="fa fa-search text-dark"></i></button>
                                     </div>
                                 </div>
                             </form>
@@ -30,14 +35,14 @@
                 </div>
             </div>
         </div>
-      
+
     </div>
 </template>
+
 <script>
 export default {
-    
+
 }
 </script>
-<style>
-    
-</style>
+
+<style></style>
