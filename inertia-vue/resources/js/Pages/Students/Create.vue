@@ -24,6 +24,7 @@ const submit = () => {
 </script>
 
 <template>
+
     <Head title="Student Create" />
 
     <AuthenticatedLayout>
@@ -41,56 +42,26 @@ const submit = () => {
                             <div>
                                 <InputLabel for="title" value="Name" />
 
-                                <TextInput
-                                    id="name"
-                                    type="text"
-                                    class="mt-1 block w-full"
-                                    v-model="form.name"
-                                    required
-                                    autofocus
-                                    autocomplete="username"
-                                />
+                                <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required
+                                    autofocus autocomplete="username" />
 
-                                <InputError
-                                    class="mt-2"
-                                    :message="form.errors.name"
-                                />
+                                <InputError class="mt-2" :message="form.errors.name" />
                             </div>
                             <div>
                                 <InputLabel for="email" value="Email" />
 
-                                <TextInput
-                                    id="email"
-                                    type="text"
-                                    class="mt-1 block w-full"
-                                    v-model="form.email"
-                                    required
-                                    autofocus
-                                    autocomplete="email"
-                                />
+                                <TextInput id="email" type="text" class="mt-1 block w-full" v-model="form.email"
+                                    required autofocus autocomplete="email" />
 
-                                <InputError
-                                    class="mt-2"
-                                    :message="form.errors.email"
-                                />
+                                <InputError class="mt-2" :message="form.errors.email" />
                             </div>
                             <div class="my-6">
                                 <InputLabel for="phone" value="Phone" />
 
-                                <TextInput
-                                    id="phone"
-                                    type="text"
-                                    class="mt-1 block w-full"
-                                    v-model="form.phone"
-                                    required
-                                    autofocus
-                                    autocomplete="phone"
-                                />
+                                <TextInput id="phone" type="text" class="mt-1 block w-full" v-model="form.phone"
+                                    required autofocus autocomplete="phone" />
 
-                                <InputError
-                                    class="mt-2"
-                                    :message="form.errors.phone"
-                                />
+                                <InputError class="mt-2" :message="form.errors.phone" />
                             </div>
 
                             <!-- <div class="my-6">
@@ -114,11 +85,8 @@ const submit = () => {
                                     {{ form.errors.content }}
                                 </div>
                             </div> -->
-                            <PrimaryButton
-                                type="submit"
-                                :class="{ 'opacity-25': form.processing }"
-                                :disabled="form.processing"
-                            >
+                            <PrimaryButton type="submit" :class="{ 'opacity-25': form.processing }"
+                                :disabled="form.processing">
                                 Submit
                             </PrimaryButton>
                         </form>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Service;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -30,7 +31,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/', function () {
-    return Inertia::render('Home');
+    $services = Service::all();
+    return Inertia::render('Home', compact('services'));
 });
 
 Route::get('/about', function () {
@@ -38,7 +40,8 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/services', function () {
-    return Inertia::render('Services');
+    $services = Service::all();
+    return Inertia::render('Services', compact('services'));
 })->name('services');
 
 Route::get('/projects', function () {

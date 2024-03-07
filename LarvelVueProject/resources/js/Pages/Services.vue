@@ -1,20 +1,13 @@
 <script setup>
-import TopBar from '@/Components/TopBar.vue';
-import NavBar from '@/Components/NavBar.vue';
-import Carousel from '@/Components/Carousel.vue';
-import GetinTouch from '@/Components/GetinTouch.vue';
-import About from '@/Components/About.vue';
 import Service from '@/Components/Service.vue';
 import Project from '@/Components/Project.vue';
 import Blog from '@/Components/Blog.vue';
 import Cta from '@/Components/Cta.vue';
 import Price from '@/Components/Price.vue';
-import Team from '@/Components/Team.vue';
-import Testimonial from '@/Components/Testimonial.vue';
-import Footer from '@/Components/Footer.vue';
-import Copyright from '@/Components/Copyright.vue';
+
 import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 </script>
+
 
 <template>
     <div>
