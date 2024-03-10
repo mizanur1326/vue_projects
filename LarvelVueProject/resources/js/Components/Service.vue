@@ -20,7 +20,7 @@ console.log(services);
                             <div class="d-flex" style="align-items: center; justify-content: center;">
                                 <div class="mb-4 rounded-circle services-inner-icon">
                                     <!-- <i class="fa fa-spider fa-3x text-primary"></i> -->
-                                    <i class="fa "><img :src="`images/services/${s.image}`" style="height: 70px" class="rounded-circle" /></i>
+                                    <i class="fa "><img :src="`images/services/${s.image}`" style="height: 120px; width: 120px" class="rounded-circle" /></i>
                                 </div>
                             </div>
                             <h4>{{ s.name }}</h4>
